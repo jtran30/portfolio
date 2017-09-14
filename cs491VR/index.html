@@ -111,7 +111,7 @@
 
             <div class="screenHeight" style="display: inline-block; width: 670px; height: 900px; background-color: white; box-shadow: 4px 6px 5px #888888;">
                 <div class=" cannotDragSelect">
-                    <a href="pdf/CS 491 - Week 1 Review.pdf">
+                    <a target="_blank" href="pdf/CS 491 - Week 1 Review.pdf">
                         <div class="slide1Center" style="left: 0%; top: 0%; transform: translate(0%, 0%); width: 670px; height: 900px;" onclick="">
                             <img style="width: 670px; height: 900px" src="img/Week 1.PNG"></img>
                             <h1 class="slide2CenterTxt" style="font-size: 30px; padding-left: 10px; padding-right: 10px;">Homework 1: Demo Review</h1>
@@ -171,17 +171,33 @@
         </div>
 
 
-        <div id="aboutPopout" class="popOut" style="" >
+        <div id="aboutPopout" class="popOut" style="">
             <p style="text-align: center; color: black; font-size: 40px; font-family: BebasBold">Week 3: Augmented Translations</p>
             <div id="closePopupButton" onclick="closePopup();" style="">X</div>
-            <div class="popOutContentPadding">
-                <div class="popoutImageSize" style="background-image: url('img/hw2O1.jpg')"></div>
-                <div class="popoutImageSize" style="background-image: url('img/hw2T1.png')"></div>
-                <div class="popoutImageSize" style="background-image: url('img/hw2O2.jpg'); padding-top: 800px;"></div>
-                <div class="popoutImageSize" style="background-image: url('img/hw2T2.png'); padding-top: 800px;"></div>
-                <div class="popoutImageSize" style="background-image: url('img/hw2O3.jpg'); padding-top: 800px;"></div>
-                <div class="popoutImageSize" style="background-image: url('img/hw2T3.png'); padding-top: 800px;"></div>
+            <div style="text-align: center;">
+                <ul id="popOutMenu" class="cannotDragSelect" style="width: auto; height: auto;">
+                    <li onclick="switchTab(1)" style="display: inline-block; width: 200px; height: 30px; border-right: 1px solid black;">
+                        See Writeup
+                    </li>
+                    <li onclick="switchTab(2)" style="display: inline-block; width: 200px; height: 30px;">
+                        See Images
+                    </li>
+                </ul>
 
+            </div>
+
+            <div class="popOutContentPadding">
+                <div class="tab1 hideItem">
+                    <p id="paragraphData" style="text-align: center; color: white; font-size: 22px; font-family: Arial; padding: 40px;">jdasd kbajkdsbas kjdbkasbd</p>
+                </div>
+                <div class="tab2" style="">
+                    <div class="popoutImageSize" style="background-image: url('img/hw2O1.jpg')"></div>
+                    <div class="popoutImageSize" style="background-image: url('img/hw2T1.png')"></div>
+                    <div class="popoutImageSize" style="background-image: url('img/hw2O2.jpg'); padding-top: 800px;"></div>
+                    <div class="popoutImageSize" style="background-image: url('img/hw2T2.png'); padding-top: 800px;"></div>
+                    <div class="popoutImageSize" style="background-image: url('img/hw2O3.jpg'); padding-top: 800px;"></div>
+                    <div class="popoutImageSize" style="background-image: url('img/hw2T3.png'); padding-top: 800px;"></div>
+                </div>
             </div>
 
         </div>
@@ -205,14 +221,6 @@
             <p>Programmed by: <a href="https://www.goo.gl/MWDSle">Jonathan Tran</a></p>
         </div>
 
-
-        <!--
-
-//////////////////////////////////////////
-////////Below is Scripts
-//////////////////////////////////////////
-
--->
 
 
 

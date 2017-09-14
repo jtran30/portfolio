@@ -681,6 +681,35 @@ ul#headerButtons li:active {
     color: black;
 }
 
+#popOutMenu li{
+    background-color: rgba(0,0,0, 0.2);
+    font-family: BebasBold;
+    font-size: 32px;
+    margin-right: -4px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    transition: all .3s ease-in-out;
+}
+
+#popOutMenu li:hover{
+    background-color: rgba(255,255,255, 0.4);
+}
+#popOutMenu li:active{
+    background-color: rgba(255,255,255, 0.8);
+}
+
+.popOutContentPadding .tab1, .popOutContentPadding .tab2{
+    transition: all .3s;
+}
+
+
+.hideItem{
+    display: none !important;
+    height: 0 !important;
+    width: 0 !important;
+    transition: all .5s ease-in-out;
+}
+
 @media screen and (max-device-width: 1024px),
 screen and (max-width: 1024px) {
     #parallaxPictures {

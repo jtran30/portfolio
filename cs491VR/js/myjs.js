@@ -179,6 +179,18 @@ function openPopup(num) {
 
     if (openedPopup == 0 && num == 1) {
 
+        var client = new XMLHttpRequest();
+        client.open('GET', 'files/hw2.txt');
+        client.onreadystatechange = function() {
+            //alert(client.responseText);
+            if (this.readyState == 4) { //If this is 4, the files is retrieved.
+                document.getElementById("paragraphData").innerHTML = client.responseText;
+            }
+        }
+        client.send();
+
+
+
         $("#aboutPopout").addClass("animatePopup");
         $("#aboutPopout .popOutContentPadding").fadeIn(900);
         $(window).bind('mousewheel', function(e) { // on scroll
@@ -242,6 +254,7 @@ function openPopup(num) {
 
 function closePopup() {
 
+
     if (openedPopup == 1) {
         openedPopup = 2;
 
@@ -274,6 +287,25 @@ $(".popOut").bind('oanimationend animationend webkitAnimationEnd', function() {
         $(window).unbind("mousewheel");
     }
 });
+
+
+
+function switchTab(num) {
+
+    $(".tab1, .tab2").addClass("hideItem");
+
+    if (num == 1) {
+        $(".tab1").removeClass("hideItem");
+    }
+    if (num == 2) {
+        $(".tab2").removeClass("hideItem");
+    }
+
+}
+
+
+
+
 
 
 ///////////////
