@@ -1,0 +1,62 @@
+%!Adobe-FontList 1.14
+%Locale:0x409
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:MyriadPro-Regular
+FamilyName:Myriad Pro
+StyleName:Regular
+FullName:Myriad Pro
+MenuName:Myriad Pro
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:C:\Users\Jon\Desktop\Font\Myriad Pro Regular.ttf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+FileLength:94884
+FileModTime:1494186354
+WeightClass:400
+WidthClass:5
+AngleClass:0
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:OrchideeMedium
+FamilyName:Orchidee
+StyleName:Medium
+FullName:Orchidee Medium
+MenuName:Orchidee
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:C:\Users\Jon\Desktop\Font\Orchidee.TTF
+DataFormat:sfntData
+FileLength:59476
+FileModTime:1494179657
+WeightClass:500
+WidthClass:5
+AngleClass:0
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:OrchideeLight
+FamilyName:Orchidee
+StyleName:Light
+FullName:Orchidee Light
+MenuName:Orchidee
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:C:\Users\Jon\Desktop\Font\OrchideeLite.TTF
+DataFormat:sfntData
+FileLength:54356
+FileModTime:1494179833
+WeightClass:300
+WidthClass:5
+AngleClass:0
+%EndFont
+
