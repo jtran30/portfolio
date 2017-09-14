@@ -1,0 +1,786 @@
+@font-face {
+    font-family: Orchidee;
+    src: url("font/Orchidee.TTF") format("truetype");
+}
+
+@font-face {
+    font-family: OrchideeLite;
+    src: url("font/OrchideeLite.TTF") format("truetype");
+}
+
+@font-face {
+    font-family: Myriad;
+    src: url("font/Myriad Pro Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: MUSE;
+    src: url("font/FrutigerBlack(MUSE).ttf") format("truetype");
+}
+
+@font-face {
+    font-family: CODE_B;
+    src: url("font/CODE Bold.otf") format("opentype");
+}
+
+@font-face {
+    font-family: CODE_L;
+    src: url("font/CODE Light.otf") format("opentype");
+}
+
+@font-face {
+    font-family: Capture;
+    src: url("font/Capture it.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: BebasBold;
+    src: url("font/BebasNeue Bold.otf") format("opentype");
+}
+
+@font-face {
+    font-family: BebasReg;
+    src: url("font/BebasNeue Book.otf") format("opentype");
+}
+
+body {
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+a {
+    /* text-decoration: none; */
+}
+
+a,
+a:visited {
+    color: inherit;
+}
+
+h1 {
+    font-family: BebasReg;
+}
+
+#mainBody {
+    position: static;
+    display: block;
+    height: 6000px;
+    overflow-y: scroll;
+    margin: 0;
+    background-color: black;
+}
+
+.slideWrapper {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+}
+
+.frontWrapper {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    transform: perspective(500px) translate3d(0, 0, 0);
+    transition: all 800ms cubic-bezier(0.19, 1, .22, 1) 0ms;
+}
+
+.fronterWrapper {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 12;
+    transform: perspective(500px) translate3d(0, 0, 0);
+    transition: all 800ms cubic-bezier(0.19, 1, .22, 1) 0ms;
+    pointer-events: none;
+}
+
+.back1Wrapper {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 9;
+    transition: all 600ms cubic-bezier(0.19, .6, .7, 1) 0ms;
+}
+
+.back3Wrapper {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -9;
+    transition: all 400ms cubic-bezier(0.19, .6, .6, 1) 0ms;
+}
+
+#tianLogo {
+    position: fixed;
+    left: 50%;
+    top: 8%;
+    transform: translate(-50%, -50%);
+    z-index: 500;
+}
+
+.logoButton {
+    width: 200px;
+    transition: all .5s;
+}
+
+.logoButton:hover {
+    opacity: .8;
+}
+
+#main {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    width: 100.5%;
+    height: 100.5%;
+    background-color: rgb(234, 244, 235);
+}
+
+#loadingScreen {
+    position: fixed;
+    margin: 0;
+    width: 100%;
+    height: 102%;
+    right: 0;
+    top: 0;
+    z-index: 99;
+    background-color: black;
+}
+
+.popOut {
+    z-index: 999;
+    position: fixed;
+    height: 0vh;
+    width: 0vw;
+    top: 50%;
+    left: 0%;
+    transform: translateY(-50%);
+    overflow-y: scroll;
+    overflow-x: hidden;
+    background-color: rgb(234, 244, 235);
+}
+
+
+#storyPopout,
+#aboutPopout,
+#shopPopout,
+#eventPopout {
+    display: none;
+}
+
+.animatePopup {
+    animation: pop 1.2s ease-in-out;
+    animation-fill-mode: forwards;
+    display: block !important;
+}
+
+.animateClosePopup {
+    animation: close 1.0s ease-in-out;
+    animation-fill-mode: forwards;
+    display: block !important;
+}
+
+@keyframes pop {
+    0% {
+        height: 30vh;
+        top: 50%;
+        left: 0%;
+        width: 0%;
+        transform: translateY(-50%);
+    }
+    30% {
+        transform: translateY(-50%);
+        height: 30vh;
+        top: 50%;
+        left: 0%;
+        width: 100vw;
+    }
+    100% {
+        height: 100vh;
+        transform: translateY(0%);
+        top: 0%;
+        left: 0%;
+        width: 100vw;
+    }
+}
+
+@keyframes close {
+    0% {
+        height: 100vh;
+        transform: translateY(0%);
+        top: 0%;
+        left: 0%;
+        width: 100vw;
+    }
+    30% {
+        transform: translateY(-50%);
+        height: 30vh;
+        top: 50%;
+        left: 0%;
+        width: 100vw;
+    }
+    100% {
+        height: 30vh;
+        top: 50%;
+        left: 100%;
+        width: 0vw;
+        transform: translateY(-50%);
+    }
+}
+
+.animateFinishLoad {
+    animation: wispUp 1.5s ease-in-out;
+}
+
+@keyframes wispUp {
+    0% {
+        height: 102%;
+        top: 0%;
+        left: 0%;
+        width: 100%;
+    }
+    30% {
+        height: 70%;
+        top: 10%;
+        left: 0%;
+        width: 100%;
+    }
+    100% {
+        height: 70%;
+        top: 10%;
+        left: 100%;
+        width: 0%;
+    }
+}
+
+#loadingBar {
+    position: absolute;
+    width: 0%;
+    height: 3px;
+    left: 0%;
+    top: 75%;
+    z-index: 99;
+    background-color: white;
+}
+
+.animateLoadingBar {
+    animation: load 1s ease-in-out;
+}
+
+@keyframes load {
+    0% {
+        width: 0%;
+    }
+    60% {
+        width: 70%;
+    }
+    80% {
+        width: 80%;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+.cannotDragSelect {
+    user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+/*
+        
+        ///////////////////////
+        ////BELOW is CSS for PC
+        ///////////////////////
+        
+        */
+
+/* Used for screens > 600px */
+
+.scale {
+    transform: perspective(500px) translate3d(0, 0, 0) scale(1);
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+.screenHeight {
+    position: relative;
+    display: block;
+    width: 100vw;
+    height: 115vh;
+    transition: all 1s;
+}
+
+.halfScreenHeight {
+    position: relative;
+    display: block;
+    width: 100vw;
+    height: 57.5vh;
+    transition: all 1s;
+}
+
+.screenHeight2 {
+    position: relative;
+    display: block;
+    width: 100vw;
+    height: 150vh;
+    transition: all 1s;
+}
+
+.videoHeight {
+    position: relative;
+    display: block;
+    width: 100vw;
+    height: 115vh;
+    transition: all 1s;
+}
+
+.sliderImg {
+    position: absolute;
+    left: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+    /* Top 50% and transform help keep font in center of div */
+    width: 100%;
+    height: 75%;
+    transition: left 1.2s;
+}
+
+.slide0Wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#postVideoMsg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left: 0;
+    background-color: rgba(234, 244, 235, .7);
+}
+
+.aboutLogo {
+    position: absolute;
+    width: 20%;
+    right: 25%;
+    top: 25%;
+    transition: width .2s, opacity .2s, right .2s;
+}
+
+.aboutLogo:hover {
+    width: 21%;
+    right: 24.5%;
+    opacity: 0.8;
+}
+
+.aboutLogo2 {
+    position: absolute;
+    width: 300px;
+    right: 25%;
+    top: 25%;
+}
+
+.replayLogo {
+    position: absolute;
+    width: 20%;
+    left: 25%;
+    top: 25%;
+    transition: width .2s, opacity .2s, left .2s;
+}
+
+.replayLogo:hover {
+    width: 21%;
+    left: 24.5%;
+    opacity: 0.8;
+}
+
+.slide1Center {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    /* Top 50% and transform help keep font in center of div */
+    height: 65%;
+    width: 60%;
+    transition: all 1s;
+}
+
+.slide1CenterImg {
+    width: 100%;
+    height: 100%;
+    transition: all .3s;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.slide4Center {
+    position: absolute;
+    left: 55%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    /* Top 50% and transform help keep font in center of div */
+    height: 65%;
+    width: 60%;
+    transition: all 1s;
+    cursor: pointer;
+}
+
+.slide1 {
+    background-image: url("img/slide2.JPG");
+    cursor: pointer;
+}
+
+.slide2 {
+    background-image: url("img/slide1Center.jpg");
+    cursor: pointer;
+}
+
+.slide3 {
+    background-image: url("http://www.urbanvoicechurch.com/wp-content/uploads/2016/02/uv_banner2.jpg");
+    cursor: pointer;
+}
+
+.slide4 {
+    background-image: url("img/event1.png");
+    background-size: 100% 100%;
+    width: 50vw !important;
+    height: 50vw;
+}
+
+.slide4a {
+    background-image: url("img/event2.png");
+    background-size: 100% 100%;
+    width: 50vw !important;
+    height: 50vw;
+}
+
+.slide1CenterTxt {
+    position: absolute;
+    left: 0%;
+    top: 50%;
+    transform: translateY(-50%);
+    /* Top 50% and transform help keep font in center of div */
+    text-align: center;
+    margin: 0px;
+    width: 100%;
+    font-size: 14vw;
+    color: rgba(0, 0, 0, .85);
+    letter-spacing: 2vw;
+}
+
+.slide2CenterTxt {
+    position: absolute;
+    left: 0%;
+    top: 50%;
+    transform: translateY(-50%);
+    /* Top 50% and transform help keep font in center of div */
+    text-align: center;
+    margin: 0px;
+    width: 100%;
+    font-size: 14vw;
+    color: rgba(255, 255, 255, .85);
+    background-color: rgba(0, 0, 0, 0.8);
+    letter-spacing: 2vw;
+
+}
+
+.slide1Center:hover .slide2CenterTxt {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: black;
+    transition: all .3s;
+}
+
+
+#video1ID {
+    position: inherit;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+#overlay {
+    position: inherit;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    cursor: pointer;
+    z-index: 10;
+    transition: background-color .5s;
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Safari */
+    -khtml-user-select: none;
+    /* Konqueror HTML */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none;
+    /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+
+#menuOverlay {
+    position: inherit;
+    top: 68%;
+    width: 200px;
+    height: 200px;
+    z-index: 10;
+    transition: background-color 1s;
+}
+
+ul#menuHovers {
+    margin-top: 23px;
+    margin-left: 15%;
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Safari */
+    -khtml-user-select: none;
+    /* Konqueror HTML */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none;
+    /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+
+ul#menuHovers li {
+    display: block;
+    color: black;
+    margin: 2.5px 0px 2.5px 0px;
+    font-size: 26px;
+    font-family: BebasBold;
+    text-decoration: underline;
+    transition: font-size .2s, color .2s;
+}
+
+ul#menuHovers li:hover {
+    font-size: 28px;
+    color: rgba(255, 210, 210, 1);
+    cursor: pointer;
+}
+
+.selectedMenuHover {
+    font-size: 32px !important;
+    color: rgba(255, 50, 50, 1) !important;
+}
+
+#headerOverlay {
+    position: inherit;
+    top: 0%;
+    width: 100%;
+    height: 8%;
+    background-color: rgba(0, 0, 0, 0.1);
+    z-index: 10;
+    transition: background-color .5s;
+}
+
+#headerOverlay:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+ul#headerButtons {
+    margin-top: 12px;
+    margin-left: 0px;
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Safari */
+    -khtml-user-select: none;
+    /* Konqueror HTML */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none;
+    /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+
+ul#headerButtons li {
+    display: inline;
+    color: white;
+    margin: 60px 40px 20px 40px;
+    font-size: 22px;
+    font-family: Capture;
+    font-weight: bold;
+    transition: font-size .2s, color .2s;
+}
+
+ul#headerButtons li:hover {
+    font-size: 25px;
+    color: rgba(255, 210, 210, 1);
+    cursor: pointer;
+}
+
+ul#headerButtons li:active {
+    color: rgba(255, 20, 20, 1);
+    transition: none;
+}
+
+
+.hideInPc {
+    display: none;
+}
+
+.popOutContentPadding {
+    height: auto;
+    width: 95vw;
+    padding-left: 2.5vw;
+    padding-right: 2.5vw;
+    background-color: rgba(20, 20, 20, 1);
+    text-align: center;
+}
+
+
+#parallaxPictures {
+    display: none;
+}
+
+.popoutImageSize {
+    width: 600px;
+    padding-top: 396px;
+    background-size: contain;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+
+#closePopupButton {
+    position: fixed;
+    right: 0px;
+    top: 0px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 1);
+    font-family: BebasBold;
+    font-size: 50px;
+    color: white;
+    cursor: pointer;
+}
+
+#closePopupButton:hover {
+    transition: all .3s;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: black;
+}
+
+@media screen and (max-device-width: 1024px),
+screen and (max-width: 1024px) {
+    #parallaxPictures {
+        display: none !important;
+    }
+
+
+    .slide1Center {
+        left: 50%;
+        width: 80%;
+        height: 75%;
+    }
+    .slide1CenterTxt {
+
+        font-size: 22vw;
+        letter-spacing: 2vw;
+    }
+    .slide2CenterTxt {}
+    .slide4Center {
+        position: absolute;
+        left: 0%;
+        top: 50%;
+        transform: translate(-0%, -50%);
+        /* Top 50% and transform help keep font in center of div */
+        height: 65%;
+        width: 60%;
+        transition: all 1s;
+    }
+    .slide4 {
+        background-image: url("img/event1.png");
+        background-size: 100% 100%;
+        width: 100vw !important;
+        height: 100vw;
+    }
+    .slide4a {
+        background-image: url("img/event2.png");
+        background-size: 100% 100%;
+        width: 100vw !important;
+        height: 100vw;
+    }
+    .screenHeight2 {
+        width: 100vw;
+        height: 120vh;
+        transition: all 1s;
+    }
+}
+
+
+@media screen and (max-device-width: 800px),
+screen and (max-width: 800px) {
+
+    #parallaxPictures {
+        display: none !important;
+    }
+
+    .hideInMobile {
+        display: none;
+    }
+
+
+    .slide1Center {
+        height: 200px;
+        left: 50%;
+        width: 100%;
+    }
+    .slide1CenterTxt {
+        display: none;
+    }
+    .slide2CenterTxt {
+        display: block !important;
+        font-size: 100px;
+        letter-spacing: 2vw;
+    }
+    .screenHeight {
+        position: relative;
+        display: block;
+        width: 100vw;
+        height: 150px;
+        padding-bottom: 100px;
+
+    }
+    .screenHeight2 {
+        width: 100vw;
+        height: 80vh;
+        transition: all 1s;
+    }
+    .videoHeight {
+        height: 60vh;
+    }
+
+    .frontWrapper {
+        transition: all 0ms cubic-bezier(0.19, 1, .22, 1) 0ms;
+    }
+    .fronterWrapper {
+        transition: all 0ms cubic-bezier(0.19, 1, .22, 1) 0ms;
+    }
+    .back1Wrapper {
+        transition: all 0ms cubic-bezier(0.19, .6, .7, 1) 0ms;
+    }
+    .back3Wrapper {
+        transition: all 0ms cubic-bezier(0.19, .6, .6, 1) 0ms;
+    }
+}
