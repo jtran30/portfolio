@@ -179,6 +179,8 @@ function openPopup(num) {
 
     if (openedPopup == 0 && num == 1) {
 
+        $("#aboutPopout").addClass("animatePopup");
+        $("#aboutPopout .popOutContentPadding").fadeIn(900);
         var client = new XMLHttpRequest();
         client.open('GET', 'files/hw2.txt');
         client.onreadystatechange = function() {
@@ -188,11 +190,6 @@ function openPopup(num) {
             }
         }
         client.send();
-
-
-
-        $("#aboutPopout").addClass("animatePopup");
-        $("#aboutPopout .popOutContentPadding").fadeIn(900);
         $(window).bind('mousewheel', function(e) { // on scroll
             var popupDiv = $('#aboutPopout');
             // set div scroll top offset to current + extra from this scroll
@@ -206,8 +203,20 @@ function openPopup(num) {
 
     if (openedPopup == 0 && num == 2) {
 
-        $("#shopPopout").addClass("animatePopup");
 
+
+
+        $("#shopPopout").addClass("animatePopup");
+        $("#shopPopout .popOutContentPadding").fadeIn(900);
+        var client = new XMLHttpRequest();
+        client.open('GET', 'files/hw3.txt');
+        client.onreadystatechange = function() {
+            //alert(client.responseText);
+            if (this.readyState == 4) { //If this is 4, the files is retrieved.
+                document.getElementById("paragraphDataHw3").innerHTML = client.responseText;
+            }
+        }
+        client.send();
         $(window).bind('mousewheel', function(e) { // on scroll
             var popupDiv = $('#shopPopout');
             // set div scroll top offset to current + extra from this scroll

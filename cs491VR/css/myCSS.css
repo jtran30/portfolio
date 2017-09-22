@@ -653,8 +653,8 @@ ul#headerButtons li:active {
 }
 
 .popoutImageSize {
-    width: 600px;
-    padding-top: 396px;
+    width: 1000px;
+    padding-top: 465px;
     background-size: contain;
     display: inline-block;
     background-repeat: no-repeat;

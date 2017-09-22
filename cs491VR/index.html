@@ -136,13 +136,18 @@
             </div>
 
             <div class="screenHeight">
+                <div class="slide1 cannotDragSelect">
 
+                    <div class="slide1Center" style="background: url(img/hw3P1.PNG);" onclick="openPopup(2)">
+
+                        <div class="slide1CenterImg"></div>
+                        <h1 class="slide2CenterTxt" style="font-size: 30px;">Homework 3: Immersion of an Ant</h1>
+
+                    </div>
+                </div>
             </div>
 
-            <div class="screenHeight">
 
-
-            </div>
 
 
 
@@ -188,7 +193,7 @@
 
             <div class="popOutContentPadding">
                 <div class="tab1 hideItem">
-                    <p id="paragraphData" style="text-align: center; color: white; font-size: 16px; font-family: Arial; padding: 40px;"></p>
+                    <p id="paragraphDataHw" style="text-align: center; color: white; font-size: 16px; font-family: Arial; padding: 40px;"></p>
                 </div>
                 <div class="tab2" style="">
                     <div class="popoutImageSize" style="background-image: url('img/hw2O1.jpg')"></div>
@@ -203,7 +208,35 @@
         </div>
 
 
-        <div id="shopPopout" class="popOut" style="" onclick="closePopup()">
+        <div id="shopPopout" class="popOut" style="">
+
+            <p style="text-align: center; color: black; font-size: 40px; font-family: BebasBold">Week 4: Immersion in False-Reality</p>
+            <div id="closePopupButton" onclick="closePopup();" style="">X</div>
+            <div style="text-align: center;">
+                <ul id="popOutMenu" class="cannotDragSelect" style="width: auto; height: auto;">
+                    <li onclick="switchTab(1)" style="display: inline-block; width: 200px; height: 30px; border-right: 1px solid black;">
+                        See Writeup
+                    </li>
+                    <li onclick="switchTab(2)" style="display: inline-block; width: 200px; height: 30px;">
+                        See Images
+                    </li>
+                </ul>
+
+            </div>
+
+            <div class="popOutContentPadding">
+                <div class="tab1 hideItem">
+                    <p id="paragraphDataHw3" style="text-align: center; color: white; font-size: 16px; font-family: Arial; padding: 40px;"></p>
+                </div>
+                <div class="tab2" style="">
+                    <div class="popoutImageSizeHw3" style="background-image: url('img/hw3P1.PNG')"></div>
+                    <div class="popoutImageSizeHw3" style="background-image: url('img/hw3P2.PNG')"></div>
+                    <div class="popoutImageSizeHw3" style="background-image: url('img/hw3P3.PNG'); "></div>
+                    <div class="popoutImageSizeHw3" style="background-image: url('img/hw3P4.PNG'); "></div>
+                    <div class="popoutImageSizeHw3" style="background-image: url('img/hw3P5.PNG'); "></div>
+
+                </div>
+            </div>
 
         </div>
 
