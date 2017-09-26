@@ -232,7 +232,16 @@ function openPopup(num) {
     if (openedPopup == 0 && num == 3) {
 
         $("#storyPopout").addClass("animatePopup");
-
+        $("#storyPopout .popOutContentPadding").fadeIn(900);
+        var client = new XMLHttpRequest();
+        client.open('GET', 'files/proj1.txt');
+        client.onreadystatechange = function() {
+            //alert(client.responseText);
+            if (this.readyState == 4) { //If this is 4, the files is retrieved.
+                document.getElementById("paragraphDataProj1").innerHTML = client.responseText;
+            }
+        }
+        client.send();
         $(window).bind('mousewheel', function(e) { // on scroll
             var popupDiv = $('#storyPopout');
             // set div scroll top offset to current + extra from this scroll
@@ -314,7 +323,16 @@ function switchTab(num) {
 
 
 
-
+function seeHwProj(num) {
+    if (num == 1) {
+        $("#homeworks").fadeOut();
+        $("#projects").fadeIn();
+    }
+    else {
+        $("#projects").fadeOut();
+        $("#homeworks").fadeIn();
+    }
+}
 
 
 ///////////////

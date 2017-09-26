@@ -107,48 +107,82 @@
                     </div>
                 </div>
             </div>
+            <div class="screenHeight" style="height: 15vh; margin-top: 20px; margin-bottom: 20px; padding-bottom: 0px;">
+                <div style="text-align: center; color: white; background-color: rgba(255,255,255,.2); height: 100%; width: 100%; ">
+                    <div style="position: relative; top: 50%; transform: translateY(-50%);">
+                        <div style="text-align: center;">
+                            <ul id="popOutMenu" class="cannotDragSelect" style="width: auto; height: auto;">
+                                <li onclick="seeHwProj(1)" style="display: inline-block; width: 200px; height: 30px; border-right: 1px solid black;">
+                                    See Projects
+                                </li>
+                                <li onclick="seeHwProj(2)" style="display: inline-block; width: 200px; height: 30px;">
+                                    See Homeworks
+                                </li>
+                            </ul>
 
-
-            <div class="screenHeight" style="display: inline-block; width: 670px; height: 900px; background-color: white; box-shadow: 4px 6px 5px #888888;">
-                <div class=" cannotDragSelect">
-                    <a target="_blank" href="pdf/CS 491 - Week 1 Review.pdf">
-                        <div class="slide1Center" style="left: 0%; top: 0%; transform: translate(0%, 0%); width: 670px; height: 900px;" onclick="">
-                            <img style="width: 670px; height: 900px" src="img/Week 1.PNG"></img>
-                            <h1 class="slide2CenterTxt" style="font-size: 30px; padding-left: 10px; padding-right: 10px;">Homework 1: Demo Review</h1>
-                    </a>
-                    </div>
-
-
-
-                </div>
-            </div>
-
-            <div class="screenHeight">
-                <div class="slide1 cannotDragSelect">
-
-                    <div class="slide1Center" style="background: url(img/hw2O2.jpg);" onclick="openPopup(1)">
-
-                        <div class="slide1CenterImg"></div>
-                        <h1 class="slide2CenterTxt" style="font-size: 30px;">Homework 2: Augmented Translation</h1>
-
-                    </div>
-                </div>
-            </div>
-
-            <div class="screenHeight">
-                <div class="slide1 cannotDragSelect">
-
-                    <div class="slide1Center" style="background: url(img/hw3P1.PNG);" onclick="openPopup(2)">
-
-                        <div class="slide1CenterImg"></div>
-                        <h1 class="slide2CenterTxt" style="font-size: 30px;">Homework 3: Immersion of an Ant</h1>
-
+                        </div>
                     </div>
                 </div>
             </div>
 
 
+            <div id="projects">
+                <div class="screenHeight">
+                    <div class="slide1 cannotDragSelect">
 
+                        <div class="slide1Center" style="background: url(img/proj1/proj1List.PNG);" onclick="openPopup(3)">
+
+                            <div class="slide1CenterImg"></div>
+                            <h1 class="slide2CenterTxt" style="font-size: 30px;">Project 1: Personal Office VR</h1>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div id="homeworks">
+                <div class="screenHeight" style="display: inline-block; width: 670px; height: 900px; background-color: white; box-shadow: 4px 6px 5px #888888;">
+                    <div class=" cannotDragSelect">
+                        <a target="_blank" href="pdf/CS 491 - Week 1 Review.pdf">
+                            <div class="slide1Center" style="left: 0%; top: 0%; transform: translate(0%, 0%); width: 670px; height: 900px;" onclick="">
+                                <img style="width: 670px; height: 900px" src="img/Week 1.PNG"></img>
+                                <h1 class="slide2CenterTxt" style="font-size: 30px; padding-left: 10px; padding-right: 10px;">Homework 1: Demo Review</h1>
+                        </a>
+                        </div>
+
+
+
+                    </div>
+                </div>
+
+                <div class="screenHeight">
+                    <div class="slide1 cannotDragSelect">
+
+                        <div class="slide1Center" style="background: url(img/hw2O2.jpg);" onclick="openPopup(1)">
+
+                            <div class="slide1CenterImg"></div>
+                            <h1 class="slide2CenterTxt" style="font-size: 30px;">Homework 2: Augmented Translation</h1>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="screenHeight">
+                    <div class="slide1 cannotDragSelect">
+
+                        <div class="slide1Center" style="background: url(img/hw3P1.PNG);" onclick="openPopup(2)">
+
+                            <div class="slide1CenterImg"></div>
+                            <h1 class="slide2CenterTxt" style="font-size: 30px;">Homework 3: Immersion of an Ant</h1>
+
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
 
 
 
@@ -193,7 +227,7 @@
 
             <div class="popOutContentPadding">
                 <div class="tab1 hideItem">
-                    <p id="paragraphDataHw" style="text-align: center; color: white; font-size: 16px; font-family: Arial; padding: 40px;"></p>
+                    <p id="paragraphData" style="text-align: center; color: white; font-size: 16px; font-family: Arial; padding: 40px;"></p>
                 </div>
                 <div class="tab2" style="">
                     <div class="popoutImageSize" style="background-image: url('img/hw2O1.jpg')"></div>
@@ -240,8 +274,120 @@
 
         </div>
 
-        <div id="storyPopout" class="popOut" style="" onclick="closePopup()">
+        <div id="storyPopout" class="popOut" style="">
+            <p style="text-align: center; color: black; font-size: 40px; font-family: BebasBold">Week 4: Immersion in False-Reality</p>
+            <div id="closePopupButton" onclick="closePopup();" style="">X</div>
+            <div style="text-align: center;">
+                <ul id="popOutMenu" class="cannotDragSelect" style="width: auto; height: auto;">
+                    <li onclick="switchTab(1)" style="display: inline-block; width: 200px; height: 30px; border-right: 1px solid black;">
+                        See Introduction
+                    </li>
+                    <li onclick="switchTab(2)" style="display: inline-block; width: 200px; height: 30px;">
+                        See Details
+                    </li>
+                </ul>
 
+            </div>
+
+            <div class="popOutContentPadding">
+                <div class="tab1 ">
+                    <h3 style="text-align: center; color: white; padding-top: 50px; font-size: 32px; font-family: BebasReg;"><a href="pdf/proj1Info.pdf" target="__blank">See instructions here</a></h3>
+                    <h3 style="text-align: center; color: white; padding-top: 50px; font-size: 32px; font-family: BebasReg;"><a href="https://www.dropbox.com/s/niok6xm560i0w80/jonTranProj1CS491.zip?dl=0" target="__blank">Get ZIP Project Here</a></h3>
+                    <p id="paragraphDataProj1" style="text-align: center; color: white; font-size: 16px; font-family: Arial; padding: 40px;"></p>
+                </div>
+                <div class="tab2 hideItem" style="">
+                    <p id="paragraphDataProj1a" style="text-align: center; color: white; font-size: 16px; font-family: Arial; padding: 40px;">Here are the listed in numbers of the objects used. The RED NUMBERS, are objects created by me. BLUE NUMBERS are imported from the warehouse. YELLOW TEXT are the sounds and it's origin.</p>
+                    <div class="popoutImageSizeHw3" style="background-image: url('img/proj1/proj1List.PNG')"></div>
+                    <div class="popoutImageSizeHw3" style="background-image: url('img/proj1/proj1List2.PNG')"></div>
+                    <div class="popoutImageSizeHw3" style="background-image: url('img/proj1/proj1List3.PNG'); "></div>
+                    <div class="popoutImageSizeHw3" style="background-image: url('img/proj1/proj1List4.PNG'); "></div>
+                    <div class="popoutImageSizeHw3" style="background-image: url('img/proj1/proj1List5.PNG'); "></div>
+                    <div class="popoutImageSizeHw3" style="background-image: url('img/proj1/proj1List6.PNG'); "></div>
+                    <div class="popoutImageSizeHw3" style="background-image: url('img/proj1/proj1List7.PNG'); "></div><br><br>
+<p id="paragraphDataProj1a" style="text-align: center; color: white; font-size: 16px; font-family: Arial; padding: 40px;">RED NUMBERS ARE MY OWN CREATION:<br><br>
+
+1) Coat Hanger<br>
+2) Light Holder<br>
+3) Trash Can<br>
+4) Cubed Closet<br>
+5) Frisbee<br><br>
+
+BLUE NUMBERS ARE IMPORTED:<br><br>
+
+1) Gaming Chair<br>
+2) Vent<br>
+3) Wall Desk<br>
+4) Pencils<br>
+5) Laptop<br>
+6) Wall outlet<br>
+7) Chair<br>
+8) Floor Outlet<br>
+9) Beach Ball<br>
+10) X Table (Main)<br>
+11) Dart Board<br>
+12) Triple wall switch<br>
+13) Darts<br>
+14) Pins<br>
+15) Plants<br>
+16) Projector Screen<br>
+17) Couch<br>
+18) Speakers<br>
+19) TV<br>
+20) Projector<br>
+21) Fish Tank<br>
+22) Microwave<br>
+23) Kitchen set<br>
+24) Wall switches<br><br>
+
+YELLOW TEXT IS FOR SOUND:<br><br>
+
+1,2) Door knocking and door handle clicking.<br>
+3) Physic object grab makes a sound.<br>
+4) Wall Switch activate sounds.<br>
+5) Microwave ambient loop sounds.<br>
+6) TV -> Speakers sounds.<br><br>
+</p>
+                    <p id="paragraphDataProj1a" style="text-align: center; color: white; font-size: 16px; font-family: Arial; padding: 40px;">
+                        <br><br><strong>Items</strong><br><br>
+<strong>Bowling Pin:</strong> https://3dwarehouse.sketchup.com/model/b9b59e8f4217ae8b5af983a27c524ad0/bowling-pin <br>
+<strong>Beach Ball:</strong> https://3dwarehouse.sketchup.com/model/ufb39a2b4-4dfb-4854-af33-8966d8b8f36d/Beach-Ball <br>
+<strong>Kitchen Sink:</strong> https://3dwarehouse.sketchup.com/model/e913b34f8c1aecc4a60c1a189046dd1/Small-Kitchen-CabinetsSink-UA-Plumbers-Local-159 <br>
+<strong>Lily In Pot:</strong> https://3dwarehouse.sketchup.com/model/bfd7c0ba3d690291271666a0c21c3f2/Peace-Lily-in-Small-Pot <br>
+<strong>Speakers:</strong> https://3dwarehouse.sketchup.com/model/f993f348260454bb538cf6df9faa9b65/Riveta-FSSV-Speaker <br>
+<strong>Laptop:</strong> https://3dwarehouse.sketchup.com/model/u283872fa-572b-4fc2-90ae-14c8e59b2366/New-laptop <br>
+<strong>Fish Tank:</strong> https://3dwarehouse.sketchup.com/model/ua41ca6f9-53fa-44ca-8b82-ff8512730b7d/Fish-Tank <br>
+<strong>Projector Screen:</strong> https://3dwarehouse.sketchup.com/model/cbd658a2d7966b485ba3ed0f2cf27641/09-Targa-WallCeiling-Mounted-Electric-Projection-Screen <br>
+<strong>Couch:</strong> https://3dwarehouse.sketchup.com/model/u17edd100-3cc6-42d1-9b40-379a613f2ee6/Couch <br>
+<strong>Projector:</strong> https://3dwarehouse.sketchup.com/model/9992ce5635d8a557729e474769d21582/Projector <br>
+<strong>Pencil:</strong> https://3dwarehouse.sketchup.com/model/e121fc59ec952dffb38525e01968f715/Pencil <br>
+<strong>Office Chairs:</strong> https://3dwarehouse.sketchup.com/model/b4a7230c-82bf-4cb9-849a-2864ee05a028/Office-Chair <br>
+<strong>Main Desk:</strong> https://3dwarehouse.sketchup.com/model/ubfa5549c-6628-4abd-909f-b4ff6ff34a38/Staks010 <br>
+<strong>Microwave:</strong> https://3dwarehouse.sketchup.com/model/b95c595576a3846aad0ab2bac067d6b1/microwave-samsung <br>
+<strong>Samsung TV:</strong> https://3dwarehouse.sketchup.com/model/f35e818eba233a7734bb689093b9bebf/UE75ES9000S-Samsung-Smart-TV-75-190-cm-LED-3D-TV-Screen <br>
+<strong>Switch:</strong> https://3dwarehouse.sketchup.com/model/ucfe9e936-2179-4bac-9a7d-26b590a6a4ee/Light-Switch <br>
+<strong>Triple Switch:</strong> https://3dwarehouse.sketchup.com/model/b3bdb6c331467aeeff643b6971c915c2/Triple-Light-Switch <br>
+<strong>Wall/Floor Outlet:</strong> https://3dwarehouse.sketchup.com/model/927709f9b14fd6a2412dfc90452742c7/Electrical-GFCI-Single-Outlet-Floor-Outlet-Single-Three-Lt-Switch <br>
+<strong>Vent</strong> https://3dwarehouse.sketchup.com/model/u3faa3197-ed2a-433f-b682-ef065f69181f/01994012-1-Medium-Self-Rimming-Floor-Vent-1375-x-75-x-575 <br>
+<strong>Wall Outlet:</strong> https://3dwarehouse.sketchup.com/model/9a64e793dda22393c30dcfefd613be97/GFCI-Wall-Outlet <br>
+<strong>Wall Desks:</strong> https://3dwarehouse.sketchup.com/model/ua8387752-fadd-41ff-a69c-5d5870b6098b/Watson-Seven-Electric-Open-Plan-6-pack-5-x-5-OPNSE017 <br>
+<strong>Gaming Chair:</strong> https://3dwarehouse.sketchup.com/model/fcac48fb-e00c-4764-a2ac-541bedfddd07/3D-Gaming-Chair <br>
+
+<br><br>
+<strong>Sounds:</strong><br><br>
+<strong>Microwave:</strong> https://freesound.org/people/deleted_user_7146007/sounds/383791/ <br>
+<strong>Knocking Door:</strong> https://freesound.org/people/JavierZumer/sounds/257222/ <br>
+<strong>Locked Door:</strong> https://freesound.org/people/JPolito/sounds/391723/ <br>
+<strong>Grab Sound:</strong> https://freesound.org/people/EverHeat/sounds/205560/ <br>
+<strong>Switch Sound:</strong> https://freesound.org/people/MastersDisaster/sounds/218115/ <br>
+<strong>Nightsky Music:</strong> https://soundcloud.com/nohone/nightsky <br>
+
+
+
+</p>
+
+
+                </div>
+            </div>
         </div>
 
         <div id="eventPopout" class="popOut" style="" onclick="closePopup()">
