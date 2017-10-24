@@ -254,10 +254,10 @@ function openPopup(num) {
 
     if (openedPopup == 0 && num == 4) {
 
-        $("#eventPopout").addClass("animatePopup");
-        $("#eventPopout .popOutContentPadding").fadeIn(900);
+        $("#shopPopout").addClass("animatePopup");
+        $("#shopPopout .popOutContentPadding").fadeIn(900);
         $(window).bind('mousewheel', function(e) { // on scroll
-            var popupDiv = $('#eventPopout');
+            var popupDiv = $('#shopPopout');
             // set div scroll top offset to current + extra from this scroll
             popupDiv.scrollTop(popupDiv.scrollTop() -
                 e.originalEvent.wheelDelta);
