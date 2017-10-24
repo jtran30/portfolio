@@ -3,13 +3,12 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Jonathan Tran: CS 491 - VR Design</title>
+    <title>Jonathan Tran: CS 491 - Project 2</title>
     <link rel="stylesheet" type="text/css" href="css/myCSS.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <!-- font-family: 'Montserrat', sans-serif; -->
     <link href="https://fonts.googleapis.com/css?family=Exo+2" rel="stylesheet">
-    <script type='text/javascript' src='js/mouseWheelJs/jquery.mousewheel.min.js'></script>
     <!-- font-family: 'Exo 2', sans-serif; -->
 
 
@@ -90,52 +89,87 @@
                 <img class="" style="position: relative; left: 0%; top: 0%; width: 100%; height: 100%; z-index: -9;" src="https://i.ytimg.com/vi/EZ7la-hMNuk/maxresdefault.jpg"></img>
             </div>
 
+            </div>
+            
+            
+            <div class="back1Wrapper" style="">
+            <div id="parallaxPictures">
+                    <div class="screenHeight">
+                        <div>
+                            <div class="" style=" position: absolute; left: 6%; top: 18%; width: 15%; padding-top: 22.5%; background-size: contain;  background-image: url('img/proj2/picPax1.PNG')"></div>
+                            <div class="" style=" position: absolute; left: 78%; top: 100%; width: 17%; padding-top: 17%; background-size: contain; background-image: url('img/proj2/picPax2.PNG')"></div>
+                            <div class="" style="position: absolute; left: 82%; top: 100%; width: 15%; padding-top: 17%; background-size: contain; background-image: url('img/proj2/picPax3.PNG')"></div>
+                            <div class="" style="position: absolute; left: 2%; top: 70%; width: 14%; padding-top: 20%; background-size: contain; background-image: url('img/proj2/picPax4.PNG')"></div>
+                        </div>
+                    </div>
 
-        </div>
+                    <div class="screenHeight">
+                        <div>
+                            <div class="" style="position: absolute; left: 80%; top: 60%; width: 13%; padding-top: 21%; background-size: contain; background-image: url('img/proj2/picPax5.PNG')"></div>
+                            <div class="" style="position: absolute; left: 5%; top: 15%; width: 17%; padding-top: 25.5%; background-size: contain; background-image: url('img/proj2/picPax6.PNG')"></div>
+                            <div class="" style="position: absolute; left: 10%; top: 75%; width: 35%; padding-top: 17%; background-size: contain; background-image: url('img/proj2/pic5.PNG')"></div>
+                        </div>
+                    </div>
 
-
-
-
-
-
-        <div class="frontWrapper" style="text-align: center">
+                    
+                </div>
+                </div>
+            
+            <div class="frontWrapper" style="text-align: center">
 
             <div class="screenHeight" style="height: 15vh; margin-top: 20px; margin-bottom: 20px; padding-bottom: 0px;">
                 <div style="text-align: center; color: white; background-color: rgba(255,255,255,.2); height: 100%; width: 100%; ">
                     <div style="position: relative; top: 50%; transform: translateY(-50%);">
-                        <h1 style="font-size: 50px">Jonathan Tran: CS 491 - VR Design</h1>
+                        <h1 style="font-size: 50px">Jonathan Tran: CS 491 - Project 2</h1>
                     </div>
                 </div>
             </div>
             
+                <div class="screenHeight">
+                    <div class="slide1 cannotDragSelect">
 
+                        <div class="slide1Center" style="background: url(img/proj2/pic7.PNG);" onclick="openPopup(1)">
+
+                            <div class="slide1CenterImg"></div>
+                            <h1 class="slide2CenterTxt" style="font-size: 30px;">Project 2: Brief Description</h1>
+
+                        </div>
+                    </div>
+                </div>
 
             
                 <div class="screenHeight">
                     <div class="slide1 cannotDragSelect">
 
-                        <div class="slide1Center" style="background: url(img/proj2/proj2Img.PNG);" onclick="openPopup(4)">
+                        <div class="slide1Center" style="background: url(img/proj2/proj2Img.PNG);" onclick="openPopup(2)">
 
                             <div class="slide1CenterImg"></div>
-                            <h1 class="slide2CenterTxt" style="font-size: 30px;">Project 2: Space VR</h1>
+                            <h1 class="slide2CenterTxt" style="font-size: 30px;">Video and Downloadable</h1>
 
                         </div>
                     </div>
                 </div>
                 
                 
-           
-            
+                <div class="screenHeight">
+                    <div class="slide1 cannotDragSelect">
 
+                        <div class="slide1Center" style="background: url(img/proj2/pic5.PNG);" onclick="openPopup(3)">
 
+                            <div class="slide1CenterImg"></div>
+                            <h1 class="slide2CenterTxt" style="font-size: 30px;">Images and Sources</h1>
 
-            
-
-
-
-
+                        </div>
+                    </div>
+                </div>
+                
+                
 
         </div>
+            
+            
+        </div>
+
 
 
         <!-- End of first slider set -->
@@ -150,37 +184,68 @@
             <p>Programmed by: <a href="https://www.goo.gl/MWDSle">Jonathan Tran</a></p>
         </div>
 
+        <div id="aboutPopout" class="popOut" style="">
+            <p style="text-align: center; color: black; font-size: 40px; font-family: BebasBold">Project 2: Brief Description</p>
+            <div id="closePopupButton" onclick="closePopup();" style="">X</div>
+            
 
-        <div id="loadingScreen" class="" style="">
-            <div id="loadingBar"></div>
-            <div class="aboutLogo2 cannotDragSelect" style="color: white; font-size: 42px; font-family: MUSE" onclick="slideTo(2)">CS 491: VR Design</div>
+            <div class="popOutContentPadding">
+                <div class="tab1">
+                <h2 style="text-align: left; color: white; font-size: 32px; font-family: Arial; padding: 40px 40px 10px 40px;">Intro</h2>
+                    <p id="" style="text-align: left; color: white; font-size: 16px; font-family: Arial; padding: 10px 40px 40px 40px;"><span style="font-size: 24px">Developers: </span><br>Jonathan Tran<br>Cang Le<br></p>
+                    <p id="" style="text-align: left; color: white; font-size: 16px; font-family: Arial; padding: 10px 40px 40px 40px;">Our project is based off on Andrew Johnson's work on: <a href="https://www.evl.uic.edu/aej/491/" target="__blank">https://www.evl.uic.edu/aej/491/</a> Our general approach to this project was to have something scalable whilst still being able to witness proportions of our solar system vs. other systems. Clearly our star, the sun, is outmatched by many other stars such as the 11 COM, which is shown at the start at running our project.<br></p>
+                    <p id="" style="text-align: left; color: white; font-size: 16px; font-family: Arial; padding: 10px 40px 40px 40px;">At the beginning at our project, the user should immediately notice that there's a menu in front of the user, and is encouraged to mess with the settings seen on this menu.</p><div class="popoutImageSize" style="background-image: url('img/proj2/pic9.PNG')"></div>
+                <p id="" style="text-align: left; color: white; font-size: 16px; font-family: Arial; padding: 10px 40px 40px 40px;">The user will eventually find out that they can toggle this menu using the VIVE Controller (left). On the menu, there are multiple options that can help assist the user scale properties of the solar systems seen, such as the orbit/time speed, planet size, and orbit size. The user should also then see 4 3d systems, with multiple (40) 2d systems shown in the back.</p><div class="popoutImageSize" style="background-image: url('img/proj2/pic6.PNG')"></div>
+                
+                <p id="" style="text-align: left; color: white; font-size: 16px; font-family: Arial; padding: 10px 40px 40px 40px;">With the user having the VIVE controller, they should test out that clicking onto them with a laser should switch out the first solar system (our sun), with the system they clicked on. Should the user bring the menu up again, they can cycle through pages (600 systems total) of 2d systems, and then can replace 1,2,3, or 4th system by selecting the system to modify. Users should also hear a clicking feedback, as well as some ambient sound through each star.</p><div class="popoutImageSize" style="background-image: url('img/proj2/pic7.PNG'); margin-bottom: 40px;"></div>
+                
+                </div>
+                
+            </div>
+
         </div>
+       
 
 
         <div id="shopPopout" class="popOut" style="">
-            <p style="text-align: center; color: black; font-size: 40px; font-family: BebasBold">Week 3: Augmented Translations</p>
+            <p style="text-align: center; color: black; font-size: 40px; font-family: BebasBold">Project 2: Face the Space</p>
             <div id="closePopupButton" onclick="closePopup();" style="">X</div>
-            <div style="text-align: center;">
-                <ul id="popOutMenu" class="cannotDragSelect" style="width: auto; height: auto;">
-                    <li onclick="switchTab(1)" style="display: inline-block; width: 200px; height: 30px; border-right: 1px solid black;">
-                        See Writeup
-                    </li>
-                    <li onclick="switchTab(2)" style="display: inline-block; width: 200px; height: 30px;">
-                        See Images
-                    </li>
-                </ul>
-
-            </div>
+            
 
             <div class="popOutContentPadding">
-                <div class="tab1 hideItem">
+                <div class="tab1">
                     <p id="paragraphData" style="text-align: center; color: white; font-size: 16px; font-family: Arial; padding: 40px;"></p>
                     <a target="_blank" href="pdf/proj2pdf.pdf"><h2 style="color: white">See instructions here</h2></a>
                     <a target="_blank" href="https://drive.google.com/file/d/0BxsryFL2N7VGOGlJalRIbEpqMGc/view?usp=sharing"><h2 style="color: white">Download Project Here</h2></a>
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/wXgYlX7cKBw?rel=0" frameborder="0" allowfullscreen></iframe>
                     
                 </div>
-                <div class="tab2" style="">
+                
+            </div>
+
+        </div>
+
+
+      
+
+        <div id="storyPopout" class="popOut" style="">
+            <p style="text-align: center; color: black; font-size: 40px; font-family: BebasBold">Project 2: Images and Sources</p>
+            <div id="closePopupButton" onclick="closePopup();" style="">X</div>
+            <div style="text-align: center;">
+                <ul id="popOutMenu" class="cannotDragSelect" style="width: auto; height: auto;">
+                    <li onclick="switchTab(1)" style="display: inline-block; width: 200px; height: 30px; border-right: 1px solid black;">
+                        See Images
+                    </li>
+                    <li onclick="switchTab(2)" style="display: inline-block; width: 200px; height: 30px;">
+                        See Sources
+                    </li>
+                </ul>
+
+            </div>
+
+            <div class="popOutContentPadding">
+                <div class="tab1 ">
+                  
                     <div class="popoutImageSize" style="background-image: url('img/proj2/pic1.PNG')"></div>
                    <div class="popoutImageSize" style="background-image: url('img/proj2/pic2.PNG')"></div>
                    <div class="popoutImageSize" style="background-image: url('img/proj2/pic3.PNG')"></div>
@@ -193,86 +258,24 @@
                    <div class="popoutImageSize" style="background-image: url('img/proj2/pic10.PNG')"></div>
                    <div class="popoutImageSize" style="background-image: url('img/proj2/pic11.PNG')"></div>
                    <div class="popoutImageSize" style="background-image: url('img/proj2/pic12.PNG')"></div>  
-                </div>
-            </div>
-
-        </div>
-
-
-      
-
-        <div id="storyPopout" class="popOut" style="">
-            <p style="text-align: center; color: black; font-size: 40px; font-family: BebasBold">Project 1: Personal Office</p>
-            <div id="closePopupButton" onclick="closePopup();" style="">X</div>
-            <div style="text-align: center;">
-                <ul id="popOutMenu" class="cannotDragSelect" style="width: auto; height: auto;">
-                    <li onclick="switchTab(1)" style="display: inline-block; width: 200px; height: 30px; border-right: 1px solid black;">
-                        See Introduction
-                    </li>
-                    <li onclick="switchTab(2)" style="display: inline-block; width: 200px; height: 30px;">
-                        See Details
-                    </li>
-                </ul>
-
-            </div>
-
-            <div class="popOutContentPadding">
-                <div class="tab1 ">
-                    <h3 style="text-align: center; color: white; padding-top: 50px; font-size: 32px; font-family: BebasReg;"><a href="pdf/proj1Info.pdf" target="__blank">See instructions here</a></h3>
-                    <h3 style="text-align: center; color: white; padding-top: 50px; font-size: 32px; font-family: BebasReg;"><a href="https: //www.dropbox.com/s/niok6xm560i0w80/jonTranProj1CS491.zip?dl=0" target="__blank">Get ZIP Project Here</a></h3>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Y2n4PZSkIp0" frameborder="0" allowfullscreen></iframe>
-
-                    <p id="paragraphDataProj1" style="text-align: center; color: white; font-size: 16px; font-family: Arial; padding: 40px;"></p>
+                
+ 
                 </div>
                 <div class="tab2 hideItem" style="">
-                    <p id="paragraphDataProj1a" style="text-align: center; color: white; font-size: 16px; font-family: Arial; padding: 40px;">Here are the listed in numbers of the objects used. The RED NUMBERS, are objects created by me. BLUE NUMBERS are imported from the warehouse. YELLOW TEXT are the sounds and it's origin.</p>
-                    <div class="popoutImageSizeHw3" style="background-image: url('img/proj1/proj1List.PNG')"></div>
-                    <div class="popoutImageSizeHw3" style="background-image: url('img/proj1/proj1List2.PNG')"></div>
-                    <div class="popoutImageSizeHw3" style="background-image: url('img/proj1/proj1List3.PNG'); "></div>
-                    <div class="popoutImageSizeHw3" style="background-image: url('img/proj1/proj1List4.PNG'); "></div>
-                    <div class="popoutImageSizeHw3" style="background-image: url('img/proj1/proj1List5.PNG'); "></div>
-                    <div class="popoutImageSizeHw3" style="background-image: url('img/proj1/proj1List6.PNG'); "></div>
-                    <div class="popoutImageSizeHw3" style="background-image: url('img/proj1/proj1List7.PNG'); "></div><br><br>
-                    <p id="paragraphDataProj1a" style="text-align: center; color: white; font-size: 16px; font-family: Arial; padding: 40px;">RED NUMBERS ARE MY OWN CREATION:<br><br> 1) Coat Hanger<br> 2) Light Holder<br> 3) Trash Can<br> 4) Cubed Closet<br> 5) Frisbee<br><br> BLUE NUMBERS ARE IMPORTED:<br><br> 1) Gaming Chair<br> 2) Vent<br> 3) Wall Desk<br> 4) Pencils<br>                        5) Laptop<br> 6) Wall outlet<br> 7) Chair<br> 8) Floor Outlet<br> 9) Beach Ball<br> 10) X Table (Main)<br> 11) Dart Board<br> 12) Triple wall switch<br> 13) Darts<br> 14) Pins<br> 15) Plants<br> 16) Projector Screen<br> 17) Couch<br>                        18) Speakers<br> 19) TV<br> 20) Projector<br> 21) Fish Tank<br> 22) Microwave<br> 23) Kitchen set<br> 24) Wall switches<br><br> YELLOW TEXT IS FOR SOUND:<br><br> 1,2) Door knocking and door handle clicking.<br> 3) Physic object
-                        grab makes a sound.<br> 4) Wall Switch activate sounds.<br> 5) Microwave ambient loop sounds.<br> 6) TV -> Speakers sounds.<br><br>
-                    </p>
+                    <h1 id="paragraphDataProj1a" style="text-align: center; color: white; font-size: 16px; font-family: Arial; padding: 40px;">Here are some of the sources we used.</h1>
+                    <br>
+                    
                     <p id="paragraphDataProj1a" style="text-align: center; color: white; font-size: 16px; font-family: Arial; padding: 40px;">
-                        <br><br><strong>Items</strong><br><br>
-                        <strong>Bowling Pin:</strong> <a target="__blank" href="https://3dwarehouse.sketchup.com/model/b9b59e8f4217ae8b5af983a27c524ad0/bowling-pin">Link</a><br>
-                        <strong>Beach Ball:</strong> <a target="__blank" href="https://3dwarehouse.sketchup.com/model/ufb39a2b4-4dfb-4854-af33-8966d8b8f36d/Beach-Ball">Link</a> <br>
-                        <strong>Kitchen Sink:</strong> <a target="__blank" href="https://3dwarehouse.sketchup.com/model/e913b34f8c1aecc4a60c1a189046dd1/Small-Kitchen-CabinetsSink-UA-Plumbers-Local-159">Link</a> <br>
-                        <strong>Lily In Pot:</strong> <a target="__blank" href="https://3dwarehouse.sketchup.com/model/bfd7c0ba3d690291271666a0c21c3f2/Peace-Lily-in-Small-Pot">Link</a> <br>
-                        <strong>Speakers:</strong> <a target="__blank" href="https://3dwarehouse.sketchup.com/model/f993f348260454bb538cf6df9faa9b65/Riveta-FSSV-Speaker">Link</a> <br>
-                        <strong>Laptop:</strong> <a target="__blank" href="https://3dwarehouse.sketchup.com/model/u283872fa-572b-4fc2-90ae-14c8e59b2366/New-laptop">Link</a> <br>
-                        <strong>Fish Tank:</strong> <a target="__blank" href="https://3dwarehouse.sketchup.com/model/ua41ca6f9-53fa-44ca-8b82-ff8512730b7d/Fish-Tank">Link</a> <br>
-                        <strong>Projector Screen:</strong> <a target="__blank" href="https://3dwarehouse.sketchup.com/model/cbd658a2d7966b485ba3ed0f2cf27641/09-Targa-WallCeiling-Mounted-Electric-Projection-Screen">Link</a> <br>
-                        <strong>Couch:</strong> <a target="__blank" href="https://3dwarehouse.sketchup.com/model/u17edd100-3cc6-42d1-9b40-379a613f2ee6/Couch">Link</a> <br>
-                        <strong>Projector:</strong> <a target="__blank" href="https://3dwarehouse.sketchup.com/model/9992ce5635d8a557729e474769d21582/Projector">Link</a> <br>
-                        <strong>Pencil:</strong> <a target="__blank" href="https://3dwarehouse.sketchup.com/model/e121fc59ec952dffb38525e01968f715/Pencil">Link</a> <br>
-                        <strong>Office Chairs:</strong> <a target="__blank" href="https://3dwarehouse.sketchup.com/model/b4a7230c-82bf-4cb9-849a-2864ee05a028/Office-Chair">Link</a> <br>
-                        <strong>Main Desk:</strong> <a target="__blank" href="https://3dwarehouse.sketchup.com/model/ubfa5549c-6628-4abd-909f-b4ff6ff34a38/Staks010">Link</a> <br>
-                        <strong>Microwave:</strong> <a target="__blank" href="https://3dwarehouse.sketchup.com/model/b95c595576a3846aad0ab2bac067d6b1/microwave-samsung">Link</a> <br>
-                        <strong>Samsung TV:</strong> <a target="__blank" href="https://3dwarehouse.sketchup.com/model/f35e818eba233a7734bb689093b9bebf/UE75ES9000S-Samsung-Smart-TV-75-190-cm-LED-3D-TV-Screen">Link</a> <br>
-                        <strong>Switch:</strong> <a target="__blank" href="https://3dwarehouse.sketchup.com/model/ucfe9e936-2179-4bac-9a7d-26b590a6a4ee/Light-Switch">Link</a> <br>
-                        <strong>Triple Switch:</strong> <a target="__blank" href="https://3dwarehouse.sketchup.com/model/b3bdb6c331467aeeff643b6971c915c2/Triple-Light-Switch">Link</a> <br>
-                        <strong>Wall/Floor Outlet:</strong> <a target="__blank" href="https://3dwarehouse.sketchup.com/model/927709f9b14fd6a2412dfc90452742c7/Electrical-GFCI-Single-Outlet-Floor-Outlet-Single-Three-Lt-Switch">Link</a> <br>
-                        <strong>Vent</strong> <a target="__blank" href="https://3dwarehouse.sketchup.com/model/u3faa3197-ed2a-433f-b682-ef065f69181f/01994012-1-Medium-Self-Rimming-Floor-Vent-1375-x-75-x-575">Link</a> <br>
-                        <strong>Wall Outlet:</strong> <a target="__blank" href="https://3dwarehouse.sketchup.com/model/9a64e793dda22393c30dcfefd613be97/GFCI-Wall-Outlet">Link</a> <br>
-                        <strong>Wall Desks:</strong> <a target="__blank" href="https://3dwarehouse.sketchup.com/model/ua8387752-fadd-41ff-a69c-5d5870b6098b/Watson-Seven-Electric-Open-Plan-6-pack-5-x-5-OPNSE017">Link</a> <br>
-                        <strong>Gaming Chair:</strong> <a target="__blank" href="https://3dwarehouse.sketchup.com/model/fcac48fb-e00c-4764-a2ac-541bedfddd07/3D-Gaming-Chair">Link</a> <br>
-
-                        <br><br>
-                        <strong>Sounds:</strong><br><br>
-                        <strong>Microwave:</strong> <a target="__blank" href="https://freesound.org/people/deleted_user_7146007/sounds/383791/">Link</a> <br>
-                        <strong>Knocking Door:</strong> <a target="__blank" href="https://freesound.org/people/JavierZumer/sounds/257222/">Link</a> <br>
-                        <strong>Locked Door:</strong> <a target="__blank" href="https://freesound.org/people/JPolito/sounds/391723/">Link</a> <br>
-                        <strong>Grab Sound:</strong> <a target="__blank" href="https://freesound.org/people/EverHeat/sounds/205560/">Link</a> <br>
-                        <strong>Switch Sound:</strong> <a target="__blank" href="https://freesound.org/people/MastersDisaster/sounds/218115/">Link</a> <br>
-                        <strong>Nightsky Music:</strong> <a target="__blank" href="https://soundcloud.com/nohone/nightsky">Link</a> <br>
-                        <strong>Ball Bounce:</strong> <a target="__blank" href="https://freesound.org/people/andre.rocha.nascimento/sounds/51460/">Link</a> <br>
-
-
-
+                        <strong>Sources</strong><br>
+                        <strong>Jupiter sound: </strong> <a target="__blank" href="https://www.youtube.com/watch?v=e3fqE01YYWs">Link</a><br>
+                        <strong>HTC controller with laser: </strong> <a target="__blank" href="https://unity3d.college/2017/06/17/steamvr-laser-pointer-menus/">Link</a> <br>
+                        <strong>Scripts that allows us to interact with GUI via laser: </strong> <a target="__blank" href="https://github.com/wacki/Unity-VRInputModule">Link</a> <br>
+                        <strong>Data for the solar systems:</strong> <a target="__blank" href="http://exoplanet.eu">Link</a> <br>
+                         <strong>Clicking sound:</strong> <a target="__blank" href="https://freesound.org/browse/tags/sound-effects/">Link</a> <br>
+                        <strong>Shading/Highlighting: </strong> <a target="__blank" href="http://wiki.unity3d.com/index.php?title=Silhouette-Outlined_Diffuse">Link</a> <br> 
+                        <strong>Parsing through a CSV: </strong> <a target="__blank" href="https://stackoverflow.com/questions/5282999/reading-csv-file-and-storing-values-into-an-array">Link</a> <br> 
+                        
+                        
                     </p>
 
 
@@ -294,7 +297,7 @@
 
 
 
-        <script src="js/myjs.js"></script>
+        <script src="js/myjsPS2.js"></script>
 
 </body>
 
