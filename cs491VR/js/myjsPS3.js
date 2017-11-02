@@ -275,13 +275,16 @@ $(".popOut").bind('oanimationend animationend webkitAnimationEnd', function() {
 
 function switchTab(num) {
 
-    $(".tab1, .tab2").addClass("hideItem");
+    $(".tab1, .tab2, .tab3").addClass("hideItem");
 
     if (num == 1) {
         $(".tab1").removeClass("hideItem");
     }
     if (num == 2) {
         $(".tab2").removeClass("hideItem");
+    }
+    if (num == 3) {
+        $(".tab3").removeClass("hideItem");
     }
 
 }

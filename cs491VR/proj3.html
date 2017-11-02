@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Jonathan Tran: CS 491 - Project 2</title>
+    <link rel="stylesheet" type="text/css" href="css/myCSS.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <!-- font-family: 'Montserrat', sans-serif; -->
+    <link href="https://fonts.googleapis.com/css?family=Exo+2" rel="stylesheet">
+    <!-- font-family: 'Exo 2', sans-serif; -->
+
+
+    <style>
+        @font-face {
+            font-family: Orchidee;
+            src: url("font/Orchidee.TTF") format("truetype");
+        }
+
+        @font-face {
+            font-family: OrchideeLite;
+            src: url("font/OrchideeLite.TTF") format("truetype");
+        }
+
+        @font-face {
+            font-family: Myriad;
+            src: url("font/Myriad Pro Regular.ttf") format("truetype");
+        }
+
+        @font-face {
+            font-family: MUSE;
+            src: url("font/FrutigerBlack(MUSE).ttf") format("truetype");
+        }
+
+        @font-face {
+            font-family: CODE_B;
+            src: url("font/CODE Bold.otf") format("opentype");
+        }
+
+        @font-face {
+            font-family: CODE_L;
+            src: url("font/CODE Light.otf") format("opentype");
+        }
+
+        @font-face {
+            font-family: Capture;
+            src: url("font/Capture it.ttf") format("truetype");
+        }
+
+        @font-face {
+            font-family: BebasBold;
+            src: url("font/BebasNeue Bold.otf") format("opentype");
+        }
+
+        @font-face {
+            font-family: BebasReg;
+            src: url("font/BebasNeue Book.otf") format("opentype");
+        }
+    </style>
+
+
+</head>
+
+
+<!--
+
+////////////////////
+///////Begin Body Tag/////////////////////////////////
+////////////////////
+
+-->
+
+<body id="mainBody">
+
+
+
+
+
+
+    <div class="slideWrapper">
+
+        <div class="back3Wrapper" style="">
+            <div class="screenHeight2">
+                <img class="" style="position: relative; left: 0%; top: 0%; width: 100%; height: 100%; z-index: -9;" src="https://i.ytimg.com/vi/EZ7la-hMNuk/maxresdefault.jpg"></img>
+            </div>
+
+            <div class="screenHeight2">
+                <img class="" style="position: relative; left: 0%; top: 0%; width: 100%; height: 100%; z-index: -9;" src="https://i.ytimg.com/vi/EZ7la-hMNuk/maxresdefault.jpg"></img>
+            </div>
+
+            </div>
+            
+            
+            <div class="back1Wrapper" style="">
+            <div id="parallaxPictures">
+                    <div class="screenHeight">
+                        <div>
+                            
+                        </div>
+                    </div>
+
+                    <div class="screenHeight">
+                        <div>
+                      
+                        </div>
+                    </div>
+
+                    
+                </div>
+                </div>
+            
+            <div class="frontWrapper" style="text-align: center">
+
+            <div class="screenHeight" style="height: 15vh; margin-top: 20px; margin-bottom: 20px; padding-bottom: 0px;">
+                <div style="text-align: center; color: white; background-color: rgba(255,255,255,.2); height: 100%; width: 100%; ">
+                    <div style="position: relative; top: 50%; transform: translateY(-50%);">
+                        <h1 style="font-size: 50px">Project 3: On-Rails First Person Shooter - Unity</h1>
+                    </div>
+                </div>
+            </div>
+            
+                <div class="screenHeight">
+                    <div class="slide1 cannotDragSelect">
+
+                        <div class="slide1Center" style="background: url(img/proj3/proposal/sbSetup.jpg);" onclick="openPopup(1)">
+
+                            <div class="slide1CenterImg"></div>
+                            <h1 class="slide2CenterTxt" style="font-size: 30px;">Project 3: Proposal</h1>
+
+                        </div>
+                    </div>
+                </div>
+
+            
+                
+                
+
+        </div>
+            
+            
+        </div>
+
+
+
+        <!-- End of first slider set -->
+
+
+
+
+
+
+
+        <div class="hideInMobile" style="position: fixed; font-size:10px; bottom: -5px; right: 10px">
+            <p>Programmed by: <a href="https://www.goo.gl/MWDSle">Jonathan Tran</a></p>
+        </div>
+
+        <div id="aboutPopout" class="popOut" style="">
+            <p style="text-align: center; color: black; font-size: 40px; font-family: BebasBold">Project 3: Proposal & Details</p>
+            <div id="closePopupButton" onclick="closePopup();" style="">X</div>
+            <div style="text-align: center;">
+                <ul id="popOutMenu" class="cannotDragSelect" style="width: auto; height: auto;">
+                    <li onclick="switchTab(1)" style="display: inline-block; width: 200px; height: 30px; border-right: 1px solid black;">
+                        See Details
+                    </li>
+                    <li onclick="switchTab(2)" style="display: inline-block; width: 200px; height: 30px; border-right: 1px solid black;">
+                        See Tasks
+                    </li>
+                    <li onclick="switchTab(3)" style="display: inline-block; width: 200px; height: 30px;">
+                        See Resources
+                    </li>
+                </ul>
+
+            </div>
+
+            <div class="popOutContentPadding">
+                <div class="tab1">
+                <h2 style="text-align: left; color: white; font-size: 32px; font-family: Arial; padding: 40px 40px 10px 40px;">Project Overview</h2>
+                    <p id="" class="bodyText"><span style="font-size: 24px">Developers: </span><br>Jonathan Tran<br>Cang Le<br>Jared Donayre<br></p>
+                    <h3 id="" class="bodyText" style="font-size: 24px; padding-bottom: 10px">For our project, we propose that we are going to make a First-Person-Shooter: On-Rails - single player video game that utilizes using the Unity software whilst using the VIVE headset + controls, and speakers (for sound) 
+                    for the hardware.
+                    <div class="bodyImage"><img src="./img/proj3/proposal/fpsExample.jpg"></img><img src="./img/proj3/proposal/sbVIVE.jpg"></img></div>
+                    <br></h3>
+                    <h2 style="text-align: left; color: white; font-size: 32px; font-family: Arial; padding: 40px 40px 10px 40px;">General Description</h2>
+                    <p id="" class="bodyText">For those who are unfamiliar with the two terms "First-Person Shooter", and "On-Rails", the two terms are generally used to describe how the orientation of the camera works in game.
+                    <br><br><strong>First-Person Shooter (FPS):</strong> This type of game will have the camera in perspective of the player in game. So what we see is what the player should see. There may be times when the game will enter a third
+                    person mode which means the player can see its own 3d-model . Such instances may include dying in game, cut-scenes, or loading. This is where the HTC VIVE headset and controllers come in. (See below section).
+                    <br><br>
+                    The game will generally involve the player to survive through the predetermined path that is filled with enemies. The enemies all should vary slightly in their AI, such that some may use faster projectiles, more health, etc. We will end the stage with a boss
+                    battle which will involve a newer improvised strategy to defeat.
+                    <br>
+                    <br>The VIVE headset will track the player's direction of view, and thus in game, will provide a similar direction of viewing. Such as if the player is physically looking up, then so will in game.
+                    Our game will be utilizing both dimensions of 3d movement (thus we must view 360° in both the X and Y planes) - enemies or area of interests will appear from behind, below or above the player.
+                    <br>On the side: The world will define basic gravity for the most part if neccesary such as heavy projectiles with drop and perhaps "ragdolling" will be used on falling objects.</p>
+                    <div class="bodyImage"><img src="./img/proj3/proposal/sbAim.jpg"></img><img src="./img/proj3/proposal/sbReload.jpg"></img></div>
+                    <p id="" class="bodyText">
+                    <br>
+                    <br> Since there will be sound in the game, speakers (preferably placed around the user) will help guide the user in locating areas of interests or being vary of their environment.
+                    </p>
+                    <div class="bodyImage"><img src="./img/proj3/proposal/sbSound.jpg"></img></div>
+                    <p id="" class="bodyText">
+                    <br>
+                    <br> The controllers will help serve the player in handling the weapons (preferably a gun in some manner). The left and right hand VIVE controllers will behave differently depending on the user's choice of weapon or game state.
+                    Such interactions may include that the left hand controller be used for aiming a 2-handed weapon, for menu selection and touch, while the right controller for shooting, interact, and also aiming. At times the controllers will work together,
+                    some ideas include blocking (by putting the two controllers together), reload (putting both controllers downward), or switch weapons (one controller reaches to the back). 
+                    </p>
+                    <div class="bodyImage"><img src="./img/proj3/proposal/sbSwitch.jpg"></img><img src="./img/proj3/proposal/sbSwitch2.jpg"></img></div>
+                    <p id="" class="bodyText">
+                    <br>
+                    <br> <strong>On-Rails:</strong> This term, when used in conjunction with FPS, means that the player will ultimately be unable to move by themselves (however see the next section), and that the player is automatically moved upon a
+                    pre-determined path that may make a couple stops where big point of interests are displayed (such as boss fights or bonus areas). There can be some form of control over the path the player can take, by doing special actions such as
+                    shooting down a wooden barrier before getting close to it, which will cause the player to take that route instead.
+                    
+                    <br>
+                    <br> <strong>VIVE Zone:</strong> Since we are using the HTC VIVE, we are given a play area in which the user can move around in a rectangular zone where the camera is set up. Within this zone, our game should allow
+                    the user to move or strafe within the given area. This is how the player will be able to react to some of enemy interactions, such as by dodging the enemy projectiles thrown at the player. Strafing will be useful so that the user can
+                    get closer to cover (where the user is safe from enemies), or to be able to interact objects that are generally out of the reach of the player.
+                    <div class="bodyImage"><img src="./img/proj3/proposal/sbDodge.jpg"></img><img src="./img/proj3/proposal/sbDuck.jpg"></img></div>
+                    <p id="" class="bodyText">
+                    <br>
+                    <br> <strong>Safety & Setup: </strong> Considering that we are using up the VIVE Zone (see below), there should be precaution before being able to play this game. The user should make sure that there is a clear area around the play
+                    zone. The cameras must also be set so that the camera can have full view of the VIVE Zone, please follow the Steam VR instructions when doing so.
+                    Furniture may be damaged by swinging the controllers around.
+                    <br>
+                    <div class="bodyImage"><img src="./img/proj3/proposal/sbSetup.jpg"></img><img src="./img/proj3/proposal/sbWarn.jpg"></img></div>
+                    
+                    <br>
+                    </p>
+                
+                </div>
+                <div class="tab2">
+                <h2 style="text-align: left; color: white; font-size: 32px; font-family: Arial; padding: 40px 40px 10px 40px;">Team Tasks: Determined roles</h2>
+                <p class="bodyText" style="padding-top: 40px;"><strong>Who is on your team (1-3 people teams) and what their roles in the project are: </strong><br><br>
+                
+The team consists of 3 group members: Jon Tran, Cang Le and Jared Donayre. Each one of us will be handling different tasks and be responsible for contributing to the project. <br><br>
+
+Jon Tran:  design the general layout of the play area and some pre-determined on-rail paths that will control the flow of the game. He is also taking care of all the necessary textures for all objects within the current level layout, the necessary sounds of the guns shooting, targets being hit, player being hit, etc. The game will consist of several level layouts and a boss at the end. Since this is a big part of the work, Jared will also contribute and help Jon out with various tasks. 
+<br><br>Cang Le:  In charge of user interface and user interaction such as holding a gun with the HTC Controller or firing by pulling the controller trigger, etc.  Implementing functions that include: reload guns by lowering the controller below the waist level, switching guns by reaching one of the hand over the head, crouch by user lowering their body. This will allow user to have a more realistic and immerse experience in playing the game instead of just having the user standing still in one spot and 'shoot'. Will also be responsible for designing the menu that will control the overall state of the game, allowing users to change settings such as sound level, lightning control and/or level difficulty.  
+<br><br>Jared Donayre: Design and implement some AI for targets that will aim and shoot at the player. Whenever the player is moving across the play area, the AI will adjust their aim accordingly so that they will not be shooting at a static spot, thus, making the game very easy and boring. Handling the target's animation to show that they are reloading their guns, or throwing objects at player, or running towards the player.</p>
+                </div>
+                
+                <div class="tab3">
+                    <h2 style="text-align: left; color: white; font-size: 32px; font-family: Arial; padding: 40px 40px 10px 40px;">Possible Resources for us</h2>
+                    <ul class="bodyText">
+                    <li ><a href="https://www.mixamo.com/#/">Graphics, sprites, AND animation.</a></li>
+                     <li ><a href="https://freesound.org">Sound effects.</a></li>
+                     <li ><a href="https://downloads.khinsider.com">Music Tracks</a></li>
+                     <li ><a href="https://www.assetstore.unity3d.com/en/#!/content/64131">Library/Resource for VR - Unity</a></li>
+                    </ul>
+                </div>
+                
+            </div>
+
+        </div>
+       
+
+
+        <div id="shopPopout" class="popOut" style="">
+            <p style="text-align: center; color: black; font-size: 40px; font-family: BebasBold">Project 2: Face the Space</p>
+            <div id="closePopupButton" onclick="closePopup();" style="">X</div>
+            
+
+            <div class="popOutContentPadding">
+                <div class="tab1">
+                    <p id="paragraphData" style="text-align: center; color: white; font-size: 16px; font-family: Arial; padding: 40px;"></p>
+                    <a target="_blank" href="pdf/proj2pdf.pdf"><h2 style="color: white">See instructions here</h2></a>
+                    <a target="_blank" href="https://drive.google.com/file/d/0BxsryFL2N7VGOGlJalRIbEpqMGc/view?usp=sharing"><h2 style="color: white">Download Project Here</h2></a>
+                    <a target="_blank" href="https://drive.google.com/file/d/0BxsryFL2N7VGYnBCRmh6NGFnRGs/view?usp=sharing"><h2 style="color: white">Down Source Code Here</h2></a>
+                    
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/wXgYlX7cKBw?rel=0" frameborder="0" allowfullscreen></iframe>
+                    
+                </div>
+                
+            </div>
+
+        </div>
+
+
+      
+
+        <div id="storyPopout" class="popOut" style="">
+            <p style="text-align: center; color: black; font-size: 40px; font-family: BebasBold">Project 2: Images and Sources</p>
+            <div id="closePopupButton" onclick="closePopup();" style="">X</div>
+            <div style="text-align: center;">
+                <ul id="popOutMenu" class="cannotDragSelect" style="width: auto; height: auto;">
+                    <li onclick="switchTab(1)" style="display: inline-block; width: 200px; height: 30px; border-right: 1px solid black;">
+                        See Images
+                    </li>
+                    <li onclick="switchTab(2)" style="display: inline-block; width: 200px; height: 30px;">
+                        See Sources
+                    </li>
+                </ul>
+
+            </div>
+
+            <div class="popOutContentPadding">
+                <div class="tab1 ">
+                  
+                    <div class="popoutImageSize" style="background-image: url('img/proj2/pic1.PNG')"></div>
+                   <div class="popoutImageSize" style="background-image: url('img/proj2/pic2.PNG')"></div>
+                   <div class="popoutImageSize" style="background-image: url('img/proj2/pic3.PNG')"></div>
+                   <div class="popoutImageSize" style="background-image: url('img/proj2/pic4.PNG')"></div>
+                   <div class="popoutImageSize" style="background-image: url('img/proj2/pic5.PNG')"></div>
+                   <div class="popoutImageSize" style="background-image: url('img/proj2/pic6.PNG')"></div>
+                   <div class="popoutImageSize" style="background-image: url('img/proj2/pic7.PNG')"></div>
+                   <div class="popoutImageSize" style="background-image: url('img/proj2/pic8.PNG')"></div>
+                   <div class="popoutImageSize" style="background-image: url('img/proj2/pic9.PNG')"></div>
+                   <div class="popoutImageSize" style="background-image: url('img/proj2/pic10.PNG')"></div>
+                   <div class="popoutImageSize" style="background-image: url('img/proj2/pic11.PNG')"></div>
+                   <div class="popoutImageSize" style="background-image: url('img/proj2/pic12.PNG')"></div>  
+                
+ 
+                </div>
+                <div class="tab2 hideItem" style="">
+                    <h1 id="paragraphDataProj1a" style="text-align: center; color: white; font-size: 16px; font-family: Arial; padding: 40px;">Here are some of the sources we used.</h1>
+                    <br>
+                    
+                    <p id="paragraphDataProj1a" style="text-align: center; color: white; font-size: 16px; font-family: Arial; padding: 40px;">
+                        <strong>Sources</strong><br>
+                        <strong>Jupiter sound: </strong> <a target="__blank" href="https://www.youtube.com/watch?v=e3fqE01YYWs">Link</a><br>
+                        <strong>HTC controller with laser: </strong> <a target="__blank" href="https://unity3d.college/2017/06/17/steamvr-laser-pointer-menus/">Link</a> <br>
+                        <strong>Scripts that allows us to interact with GUI via laser: </strong> <a target="__blank" href="https://github.com/wacki/Unity-VRInputModule">Link</a> <br>
+                        <strong>Data for the solar systems:</strong> <a target="__blank" href="http://exoplanet.eu">Link</a> <br>
+                         <strong>Clicking sound:</strong> <a target="__blank" href="https://freesound.org/browse/tags/sound-effects/">Link</a> <br>
+                        <strong>Shading/Highlighting: </strong> <a target="__blank" href="http://wiki.unity3d.com/index.php?title=Silhouette-Outlined_Diffuse">Link</a> <br> 
+                        <strong>Parsing through a CSV: </strong> <a target="__blank" href="https://stackoverflow.com/questions/5282999/reading-csv-file-and-storing-values-into-an-array">Link</a> <br> 
+                        
+                        
+                    </p>
+
+
+                </div>
+            </div>
+        </div>
+
+        <div id="eventPopout" class="popOut" style="" onclick="closePopup()">
+
+
+        </div>
+
+
+        <div class="hideInMobile" style="position: fixed; font-size:10px; bottom: -5px; right: 10px">
+            <p>Programmed by: <a href="https://www.goo.gl/MWDSle">Jonathan Tran</a></p>
+        </div>
+
+
+
+
+
+        <script src="js/myjsPS2.js"></script>
+
+</body>
+
+
+
+
+</html>
