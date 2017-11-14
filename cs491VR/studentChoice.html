@@ -157,8 +157,11 @@
                     <li onclick="switchTab(1)" style="display: inline-block; width: 200px; height: 30px; border-right: 1px solid black;">
                         About
                     </li>
-                    <li onclick="switchTab(2)" style="display: inline-block; width: 200px; height: 30px;">
+                    <li onclick="switchTab(2)" style="display: inline-block; width: 200px; height: 30px; border-right: 1px solid black;">
                         Examples
+                    </li>
+                    <li onclick="switchTab(3)" style="display: inline-block; width: 200px; height: 30px;">
+                        Pros & Cons
                     </li>
                 </ul>
 
@@ -222,6 +225,61 @@
                   <div class="bodyImage" style="z-index: 999;"><iframe width="1080" height="607.5" src="https://www.youtube.com/embed/plbPtWazCtU?rel=0" frameborder="0" allowfullscreen></iframe></div>
                 </div>
                 
+                <div class="tab3 hideItem">
+                  <h2 style="text-align: left; color: white; font-size: 32px; font-family: Arial; padding: 40px 40px 10px 10%;">Pros: ARCore</h2>
+                  <ul class="bodyText">
+                  <li>
+                  One of Google's active projects at the moment (expect updates, news, developments).
+                  </li>
+                  <li>
+                  Has lots of documentation for starters and experienced programmers alike to get started.
+                  </li>
+                  <li>
+                  Has 4 major platforms ARCore can be used on, Android Studio, Unity, Unreal, and Web based applications.
+                  </li>
+                  <li>
+                  Motion Tracking: The device will know it's relative position to its place/surroundings.
+                  </li>
+                  <li>
+                  Surface Recognition: The program and device will be able to recognize the distances of surfaces, how big the surface is relative to other objects.
+                  </li>
+                  <li>
+                  Light Estimation: Plays a role to assist above field - uses light to determine distance, depth, etc.
+                  </li>
+                    </ul>
+                    
+                    <h2 style="text-align: left; color: white; font-size: 32px; font-family: Arial; padding: 40px 40px 10px 10%;">Cons: ARCore</h2>
+                  <ul class="bodyText">
+                  <li>
+                  Although a competitor to Apple's ARKit, Apple got there first. At this point Google is aiming to keep up first, additional functionality second.
+                  </li>
+                  <li>
+                  Currently supported devices is quite limited.
+                  </li>
+                    </ul>
+                    
+                    
+                    <h2 style="text-align: left; color: white; font-size: 32px; font-family: Arial; padding: 40px 40px 10px 10%;">Pros: Tango</h2>
+                  <ul class="bodyText">
+                  <li>
+                  Basically all the pros listed above in ARCore.
+                  </li>
+                  <li>
+                  A lot more accurate in the field of motion tracking, light estimation, and distance recognition.
+                  </li>
+                    </ul>
+                    
+                    <h2 style="text-align: left; color: white; font-size: 32px; font-family: Arial; padding: 40px 40px 10px 10%;">Cons: Tango</h2>
+                  <ul class="bodyText">
+                  <li>
+                  Limited only to a device, and whether or not it comes with the hardware of Tango.
+                  </li>
+                  <li>
+                  More expensive.
+                  </li>
+                    </ul>
+                </div>
+                
                 
             </div>
 
@@ -230,22 +288,7 @@
 
 
         <div id="shopPopout" class="popOut" style="">
-            <p style="text-align: center; color: black; font-size: 40px; font-family: BebasBold">Project 2: Face the Space</p>
-            <div id="closePopupButton" onclick="closePopup();" style="">X</div>
             
-
-            <div class="popOutContentPadding">
-                <div class="tab1">
-                    <p id="paragraphData" style="text-align: center; color: white; font-size: 16px; font-family: Arial; padding: 40px;"></p>
-                    <a target="_blank" href="pdf/proj2pdf.pdf"><h2 style="color: white">See instructions here</h2></a>
-                    <a target="_blank" href="https://drive.google.com/file/d/0BxsryFL2N7VGOGlJalRIbEpqMGc/view?usp=sharing"><h2 style="color: white">Download Project Here</h2></a>
-                    <a target="_blank" href="https://drive.google.com/file/d/0BxsryFL2N7VGYnBCRmh6NGFnRGs/view?usp=sharing"><h2 style="color: white">Down Source Code Here</h2></a>
-                    
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/wXgYlX7cKBw?rel=0" frameborder="0" allowfullscreen></iframe>
-                    
-                </div>
-                
-            </div>
 
         </div>
 
@@ -253,58 +296,7 @@
       
 
         <div id="storyPopout" class="popOut" style="">
-            <p style="text-align: center; color: black; font-size: 40px; font-family: BebasBold">Project 2: Images and Sources</p>
-            <div id="closePopupButton" onclick="closePopup();" style="">X</div>
-            <div style="text-align: center;">
-                <ul id="popOutMenu" class="cannotDragSelect" style="width: auto; height: auto;">
-                    <li onclick="switchTab(1)" style="display: inline-block; width: 200px; height: 30px; border-right: 1px solid black;">
-                        See Images
-                    </li>
-                    <li onclick="switchTab(2)" style="display: inline-block; width: 200px; height: 30px;">
-                        See Sources
-                    </li>
-                </ul>
-
-            </div>
-
-            <div class="popOutContentPadding">
-                <div class="tab1 ">
-                  
-                    <div class="popoutImageSize" style="background-image: url('img/proj2/pic1.PNG')"></div>
-                   <div class="popoutImageSize" style="background-image: url('img/proj2/pic2.PNG')"></div>
-                   <div class="popoutImageSize" style="background-image: url('img/proj2/pic3.PNG')"></div>
-                   <div class="popoutImageSize" style="background-image: url('img/proj2/pic4.PNG')"></div>
-                   <div class="popoutImageSize" style="background-image: url('img/proj2/pic5.PNG')"></div>
-                   <div class="popoutImageSize" style="background-image: url('img/proj2/pic6.PNG')"></div>
-                   <div class="popoutImageSize" style="background-image: url('img/proj2/pic7.PNG')"></div>
-                   <div class="popoutImageSize" style="background-image: url('img/proj2/pic8.PNG')"></div>
-                   <div class="popoutImageSize" style="background-image: url('img/proj2/pic9.PNG')"></div>
-                   <div class="popoutImageSize" style="background-image: url('img/proj2/pic10.PNG')"></div>
-                   <div class="popoutImageSize" style="background-image: url('img/proj2/pic11.PNG')"></div>
-                   <div class="popoutImageSize" style="background-image: url('img/proj2/pic12.PNG')"></div>  
-                
- 
-                </div>
-                <div class="tab2 hideItem" style="">
-                    <h1 id="paragraphDataProj1a" style="text-align: center; color: white; font-size: 16px; font-family: Arial; padding: 40px;">Here are some of the sources we used.</h1>
-                    <br>
-                    
-                    <p id="paragraphDataProj1a" style="text-align: center; color: white; font-size: 16px; font-family: Arial; padding: 40px;">
-                        <strong>Sources</strong><br>
-                        <strong>Jupiter sound: </strong> <a target="__blank" href="https://www.youtube.com/watch?v=e3fqE01YYWs">Link</a><br>
-                        <strong>HTC controller with laser: </strong> <a target="__blank" href="https://unity3d.college/2017/06/17/steamvr-laser-pointer-menus/">Link</a> <br>
-                        <strong>Scripts that allows us to interact with GUI via laser: </strong> <a target="__blank" href="https://github.com/wacki/Unity-VRInputModule">Link</a> <br>
-                        <strong>Data for the solar systems:</strong> <a target="__blank" href="http://exoplanet.eu">Link</a> <br>
-                         <strong>Clicking sound:</strong> <a target="__blank" href="https://freesound.org/browse/tags/sound-effects/">Link</a> <br>
-                        <strong>Shading/Highlighting: </strong> <a target="__blank" href="http://wiki.unity3d.com/index.php?title=Silhouette-Outlined_Diffuse">Link</a> <br> 
-                        <strong>Parsing through a CSV: </strong> <a target="__blank" href="https://stackoverflow.com/questions/5282999/reading-csv-file-and-storing-values-into-an-array">Link</a> <br> 
-                        
-                        
-                    </p>
-
-
-                </div>
-            </div>
+            
         </div>
 
         <div id="eventPopout" class="popOut" style="" onclick="closePopup()">
