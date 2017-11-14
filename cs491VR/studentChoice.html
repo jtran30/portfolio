@@ -85,9 +85,7 @@
                 <img class="" style="position: relative; left: 0%; top: 0%; width: 100%; height: 100%; z-index: -9;" src="https://i.ytimg.com/vi/EZ7la-hMNuk/maxresdefault.jpg"></img>
             </div>
 
-            <div class="screenHeight2">
-                <img class="" style="position: relative; left: 0%; top: 0%; width: 100%; height: 100%; z-index: -9;" src="https://i.ytimg.com/vi/EZ7la-hMNuk/maxresdefault.jpg"></img>
-            </div>
+            
 
             </div>
             
@@ -100,11 +98,7 @@
                         </div>
                     </div>
 
-                    <div class="screenHeight">
-                        <div>
-                      
-                        </div>
-                    </div>
+                    
 
                     
                 </div>
@@ -158,17 +152,27 @@
         <div id="aboutPopout" class="popOut" style="">
             <p style="text-align: center; color: black; font-size: 40px; font-family: BebasBold">Student Choice: ARCore + Tango</p>
             <div id="closePopupButton" onclick="closePopup();" style="">X</div>
-            
+            <div style="text-align: center;">
+                <ul id="popOutMenu" class="cannotDragSelect" style="width: auto; height: auto;">
+                    <li onclick="switchTab(1)" style="display: inline-block; width: 200px; height: 30px; border-right: 1px solid black;">
+                        About
+                    </li>
+                    <li onclick="switchTab(2)" style="display: inline-block; width: 200px; height: 30px;">
+                        Examples
+                    </li>
+                </ul>
+
+            </div>
 
             <div class="popOutContentPadding">
                 <div class="tab1">
-                <h2 style="text-align: left; color: white; font-size: 32px; font-family: Arial; padding: 40px 40px 10px 40px;">Google ARCore</h2>
+                <h2 style="text-align: left; color: white; font-size: 32px; font-family: Arial; padding: 40px 40px 10px 10%;">Google ARCore</h2>
                     
                     <h3 id="" class="bodyText" style="font-size: 24px; padding-bottom: 40px"><i>"The Google ARCore is the answer to Apple's ARKit":</i><br><br> Google Tango and ARCore provides augmented visualization that is way less jittery than current AR systems.
                     
                     </h3>
                     <div class="bodyImage" style="padding-top: 40px; padding-bottom: 40px;"><img style="width: 1080px" src="https://cdn0.vox-cdn.com/thumbor/T3MSw_OjnccGXJqPMDSWmO1lnX4=/0x1080/volume-assets.voxmedia.com/production/f9beb10f7e6d8a0072bccc5f61839531/maxresdefault.jpg"></img></div>
-                    <h2 style="text-align: left; color: white; font-size: 32px; font-family: Arial; padding: 40px 40px 10px 40px;">General Description</h2>
+                    <h2 style="text-align: left; color: white; font-size: 32px; font-family: Arial; padding: 40px 40px 10px 10%;">General Description</h2>
                     <p id="" class="bodyText">First off, the Google ARCore and Tango can be confused with, but are together in terms of functionality. The ARCore is a <strong>Platform</strong>, i.e. in terms of what we understand, 
                     it's more like a large library for an IDE that allows us to make use of the smart phone's technology such as the <strong>Camera, Accelerometer, Geo-Location, Motion-Sensor, etc</strong>. 
                     </p>
@@ -203,6 +207,19 @@
                     <div class="bodyImage"><img style="width: 1080px;" src="./img/supportedEnv.PNG"></img></div>
                     </p>
                     
+                </div>
+                
+                <div class="tab2 hideItem">
+                  <h2 style="text-align: center; color: white; font-size: 32px; font-family: Arial; padding: 40px 2.5vh 2.5vh 40px;">ARCore Vs. Google Tango</h2>
+                  <div class="bodyImage" style="z-index: 999;"><iframe width="1080" height="607.5" src="https://www.youtube.com/embed/CoODUa2yIGM?rel=0" frameborder="0" allowfullscreen></iframe></div>
+                  <h2 style="text-align: center; color: white; font-size: 32px; font-family: Arial; padding: 40px 2.5vh 2.5vh 40px;">ARCore: Tourist API: Directions</h2>
+                  <div class="bodyImage" style="z-index: 999;"><iframe width="1080" height="607.5" src="https://www.youtube.com/embed/hl21nXCDIKE?rel=0" frameborder="0" allowfullscreen></iframe></div>
+                  <h2 style="text-align: center; color: white; font-size: 32px; font-family: Arial; padding: 40px 2.5vh 2.5vh 40px;">ARCore: AR Vehicle to IRL Vehicle</h2>
+                  <div class="bodyImage" style="z-index: 999;"><iframe width="1080" height="607.5" src="https://www.youtube.com/embed/6nxmHtdHrxw?rel=0" frameborder="0" allowfullscreen></iframe></div>
+                  <h2 style="text-align: center; color: white; font-size: 32px; font-family: Arial; padding: 40px 2.5vh 2.5vh 40px;">Google Tango: AR Calibration Test</h2>
+                  <div class="bodyImage" style="z-index: 999;"><iframe width="1080" height="607.5" src="https://www.youtube.com/embed/Vs9I_qQluIw?rel=0" frameborder="0" allowfullscreen></iframe></div>
+                  <h2 style="text-align: center; color: white; font-size: 32px; font-family: Arial; padding: 40px 2.5vh 2.5vh 40px;">Google Tango: Live Google Maps Demonstration</h2>
+                  <div class="bodyImage" style="z-index: 999;"><iframe width="1080" height="607.5" src="https://www.youtube.com/embed/plbPtWazCtU?rel=0" frameborder="0" allowfullscreen></iframe></div>
                 </div>
                 
                 
